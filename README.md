@@ -27,15 +27,19 @@ El repositorio está organizado en varias carpetas que contienen los recursos, c
 
 Para ejecutar el código del Ejercicio 2, navega a la carpeta `src/2/` y ejecuta el script `ejercicio2.py`.
 
-cd src/2
-python ejercicio2.py
+Link del video de demostraciíon: https://youtu.be/MQNXBgDn4Ks .
+
+- cd src/2
+- python ejercicio2.py
 
 ### Ejercicio 3
 
 Para el Ejercicio 3, navega a la carpeta `src/3/` y ejecuta el script `ejercicio3.py`.:
 
-cd src/3
-python ejercicio3.py
+Link del video de demostraciíon: https://youtu.be/LEv3PsSZW2I .
+
+- cd src/3 .
+- python ejercicio3.py
 
 ## Autor
 

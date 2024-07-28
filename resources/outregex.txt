@@ -1,0 +1,112 @@
+Expresion Postfijo: ab|
+Detalle de pasos:
+Elemento: a, Pila: [], Salida: ['a']
+Elemento: |, Pila: ['|'], Salida: ['a']
+Elemento: b, Pila: ['|'], Salida: ['a', 'b']
+Vaciar pila, Pila: [], Salida: ['a', 'b', '|']
+
+Expresion Postfijo: abc|d*
+Detalle de pasos:
+Elemento: a, Pila: [], Salida: ['a']
+Elemento: (, Pila: ['('], Salida: ['a']
+Elemento: b, Pila: ['('], Salida: ['a', 'b']
+Elemento: |, Pila: ['(', '|'], Salida: ['a', 'b']
+Elemento: c, Pila: ['(', '|'], Salida: ['a', 'b', 'c']
+Elemento: ), Pila: [], Salida: ['a', 'b', 'c', '|']
+Elemento: *, Pila: ['*'], Salida: ['a', 'b', 'c', '|']
+Elemento: d, Pila: ['*'], Salida: ['a', 'b', 'c', '|', 'd']
+Vaciar pila, Pila: [], Salida: ['a', 'b', 'c', '|', 'd', '*']
+
+Expresion Postfijo: ab?c+
+Detalle de pasos:
+Elemento: a, Pila: [], Salida: ['a']
+Elemento: ?, Pila: ['?'], Salida: ['a']
+Elemento: b, Pila: ['?'], Salida: ['a', 'b']
+Elemento: +, Pila: ['+'], Salida: ['a', 'b', '?']
+Elemento: c, Pila: ['+'], Salida: ['a', 'b', '?', 'c']
+Vaciar pila, Pila: [], Salida: ['a', 'b', '?', 'c', '+']
+
+Expresion Postfijo: abc|d*+
+Detalle de pasos:
+Elemento: a, Pila: [], Salida: ['a']
+Elemento: (, Pila: ['('], Salida: ['a']
+Elemento: b, Pila: ['('], Salida: ['a', 'b']
+Elemento: |, Pila: ['(', '|'], Salida: ['a', 'b']
+Elemento: c, Pila: ['(', '|'], Salida: ['a', 'b', 'c']
+Elemento: ), Pila: [], Salida: ['a', 'b', 'c', '|']
+Elemento: *, Pila: ['*'], Salida: ['a', 'b', 'c', '|']
+Elemento: d, Pila: ['*'], Salida: ['a', 'b', 'c', '|', 'd']
+Elemento: +, Pila: ['+'], Salida: ['a', 'b', 'c', '|', 'd', '*']
+Vaciar pila, Pila: [], Salida: ['a', 'b', 'c', '|', 'd', '*', '+']
+
+Expresion Postfijo: abc|d?*
+Detalle de pasos:
+Elemento: a, Pila: [], Salida: ['a']
+Elemento: (, Pila: ['('], Salida: ['a']
+Elemento: b, Pila: ['('], Salida: ['a', 'b']
+Elemento: |, Pila: ['(', '|'], Salida: ['a', 'b']
+Elemento: c, Pila: ['(', '|'], Salida: ['a', 'b', 'c']
+Elemento: ), Pila: [], Salida: ['a', 'b', 'c', '|']
+Elemento: ?, Pila: ['?'], Salida: ['a', 'b', 'c', '|']
+Elemento: d, Pila: ['?'], Salida: ['a', 'b', 'c', '|', 'd']
+Elemento: *, Pila: ['*'], Salida: ['a', 'b', 'c', '|', 'd', '?']
+Vaciar pila, Pila: [], Salida: ['a', 'b', 'c', '|', 'd', '?', '*']
+
+Expresion Postfijo: a\.b.
+Detalle de pasos:
+Elemento: a, Pila: [], Salida: ['a']
+Elemento: \, Pila: [], Salida: ['a', '\\']
+Elemento: ., Pila: ['.'], Salida: ['a', '\\']
+Elemento: ., Pila: ['.'], Salida: ['a', '\\', '.']
+Elemento: b, Pila: ['.'], Salida: ['a', '\\', '.', 'b']
+Vaciar pila, Pila: [], Salida: ['a', '\\', '.', 'b', '.']
+
+Expresion Postfijo: a\bc\|d
+Detalle de pasos:
+Elemento: a, Pila: [], Salida: ['a']
+Elemento: \, Pila: [], Salida: ['a', '\\']
+Elemento: (, Pila: ['('], Salida: ['a', '\\']
+Elemento: b, Pila: ['('], Salida: ['a', '\\', 'b']
+Elemento: |, Pila: ['(', '|'], Salida: ['a', '\\', 'b']
+Elemento: c, Pila: ['(', '|'], Salida: ['a', '\\', 'b', 'c']
+Elemento: \, Pila: ['(', '|'], Salida: ['a', '\\', 'b', 'c', '\\']
+Elemento: ), Pila: [], Salida: ['a', '\\', 'b', 'c', '\\', '|']
+Elemento: d, Pila: [], Salida: ['a', '\\', 'b', 'c', '\\', '|', 'd']
+
+Expresion Postfijo: abc|d*e|
+Detalle de pasos:
+Elemento: a, Pila: [], Salida: ['a']
+Elemento: (, Pila: ['('], Salida: ['a']
+Elemento: b, Pila: ['('], Salida: ['a', 'b']
+Elemento: |, Pila: ['(', '|'], Salida: ['a', 'b']
+Elemento: c, Pila: ['(', '|'], Salida: ['a', 'b', 'c']
+Elemento: ), Pila: [], Salida: ['a', 'b', 'c', '|']
+Elemento: *, Pila: ['*'], Salida: ['a', 'b', 'c', '|']
+Elemento: d, Pila: ['*'], Salida: ['a', 'b', 'c', '|', 'd']
+Elemento: |, Pila: ['|'], Salida: ['a', 'b', 'c', '|', 'd', '*']
+Elemento: e, Pila: ['|'], Salida: ['a', 'b', 'c', '|', 'd', '*', 'e']
+Vaciar pila, Pila: [], Salida: ['a', 'b', 'c', '|', 'd', '*', 'e', '|']
+
+Expresion Postfijo: a\bc\|d*
+Detalle de pasos:
+Elemento: a, Pila: [], Salida: ['a']
+Elemento: \, Pila: [], Salida: ['a', '\\']
+Elemento: (, Pila: ['('], Salida: ['a', '\\']
+Elemento: b, Pila: ['('], Salida: ['a', '\\', 'b']
+Elemento: |, Pila: ['(', '|'], Salida: ['a', '\\', 'b']
+Elemento: c, Pila: ['(', '|'], Salida: ['a', '\\', 'b', 'c']
+Elemento: \, Pila: ['(', '|'], Salida: ['a', '\\', 'b', 'c', '\\']
+Elemento: ), Pila: [], Salida: ['a', '\\', 'b', 'c', '\\', '|']
+Elemento: *, Pila: ['*'], Salida: ['a', '\\', 'b', 'c', '\\', '|']
+Elemento: d, Pila: ['*'], Salida: ['a', '\\', 'b', 'c', '\\', '|', 'd']
+Vaciar pila, Pila: [], Salida: ['a', '\\', 'b', 'c', '\\', '|', 'd', '*']
+
+Expresion Postfijo: ab|c
+Detalle de pasos:
+Elemento: (, Pila: ['('], Salida: []
+Elemento: a, Pila: ['('], Salida: ['a']
+Elemento: |, Pila: ['(', '|'], Salida: ['a']
+Elemento: b, Pila: ['(', '|'], Salida: ['a', 'b']
+Elemento: ), Pila: [], Salida: ['a', 'b', '|']
+Elemento: c, Pila: [], Salida: ['a', 'b', '|', 'c']
+

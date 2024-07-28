@@ -1,4 +1,4 @@
-# Proyecto de Teoría de la Computación
+# Laboratorio 2 de Teoría de la Computación
 
 Este repositorio contiene los archivos y el código fuente para los ejercicios de programación asignados en el Laboratorio 2 de la clase de Teoría de la Computación de la Universidad del Valle de Guatemala.
 
